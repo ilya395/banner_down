@@ -28,16 +28,30 @@
 							<div class="popup-container__slaid-field">
 								<input type="text" id="userName" name="name" class="popup-container__slaid-name">
 							</div>
+							<div class="popup-container__slaid-arrow">
+								<img src="images/arrright_black.png" alt="" class="popup-container__slaid-arrow-img">
+							</div>
 						</div>
+						<!--
 						<div class="popup-container__content-slaid">
 							<label for="userTelephone" class="popup-container__slaid-text">Телефон</label>
 							<div class="popup-container__slaid-field">
 								<input type="tel" id="userTelephone" name="telephone" class="popup-container__slaid-phone">
 							</div>
+							<div class="popup-container__slaid-arrow">
+								<img src="images/arrright_black.png" alt="" class="popup-container__slaid-arrow-img">
+							</div>							
 						</div>
+					-->
 						<div class="popup-container__slaid-control">
+							<div class="review-slider__control-underline">
+								<div class="control-underline__item control-underline_left" onclick="previousSlide()">
+								</div>
+								<div class="control-underline__item control-underline_right" onclick="nextSlide()">
+								</div>
+							</div>
 							<div class="review-slider__control-numbers">
-								<div class="control-numbers_item">01</div>
+								<div class="control-numbers__item">01</div>
 								<div class="control-numbers__item">/</div>
 								<div class="control-numbers__item">02</div>
 							</div>	
@@ -45,12 +59,8 @@
 					</div>
 					<div class="popup-container__content-agreement">
 						<div class="popup-container__agreement-check-box">
-							<label for="agreementCheckBox"  class="agreement-check-box">
-								<input type="checkbox" id="agreementCheckBox" checked>
-							</label>
-						</div>
-						<div class="popup-container__agreement-text">
-							согласие на обработку персональных данных
+							<input type="checkbox" id="agreementCheckBox" checked="checked" class="agreement-check-box">
+							<label for="agreementCheckBox" class="popup-container__agreement-text">согласие на обработку персональных данных</label>
 						</div>
 					</div>
 				</div>
