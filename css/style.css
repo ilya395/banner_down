@@ -1,3 +1,19 @@
+/* test styles */
+body {
+	position: relative;
+}
+.test-block {
+	height: 250px;
+	width: 100%;
+	background-color: green;
+}
+.block_2 {
+	background-color: blue;	
+}
+.block_3 {
+	background-color: yellow;
+}
+/*  */
 @font-face {
 	font-family: IBMPlexSans;
 	src: url(../fonts/IBMPlexSans/IBMPlexSans-Regular.ttf);
@@ -10,13 +26,17 @@
 .popup-container {
 	width: 100%;
 	position: absolute;
-	bottom: 80%;
+	bottom: 30px;
+	/* position: fixed; */
+	z-index: 999;
 	box-sizing: border-box;
+	display: block;
 }
 .popup-container__wrap {
-	position: absolute;
-	left: 100px/* calc(50% - 224px) */;
+	left: calc(50% - 224px);
 	box-sizing: border-box;	
+	cursor: default;
+	position: relative;	
 }
 .popup-container__form {
 	width: 489px;
@@ -24,9 +44,10 @@
 	box-shadow: 8px 11px 5px 0 rgba(0, 0, 0, 0.1);
 	border: solid 1px #d6d5dc;
 	background-color: #ffffff;
-	padding: 16px 18px 21px 18px;
+	padding: 16px 18px 0px 18px;
 	box-sizing: border-box;	
 	position: relative;
+	overflow: hidden;
 }
 .popup-container__form-close {
 	position: absolute;
@@ -63,10 +84,23 @@
 	letter-spacing: normal;
 	text-align: center;
 	color: #ce356b;
+	margin-bottom: 21px;
 }
 .popup-container__content {
-	padding: 33px 81px 0px 81px;
+/*	display: none; */
+	padding: 0px 81px 0px 81px;
 	box-sizing: border-box;	
+	position: relative;
+	height: 0;
+	transition: height 2s ease, padding-top 2s ease;
+}
+.popup-container__content-wrap {
+	/* position: absolute; */
+	bottom: 0;
+}
+.popup-container__content.show {
+	height: 226px;
+	padding-top: 0px;
 }
 .popup-container__content-title {
 	font-family: IBMPlexSans;
@@ -78,6 +112,7 @@
 	letter-spacing: normal;
 	text-align: center;
 	color: #000000;
+	margin-top: 12px;
 	margin-bottom: 17px;
 }
 .popup-container__content-slaider {
@@ -86,10 +121,11 @@
 	box-sizing: border-box;	
 }
 .popup-container__content-slaid {
+	display: none;
 	position: relative;
 }
-.popup-container__content-slaid .active {
-
+.popup-container__content-slaid.active {
+	display: block;
 }
 .popup-container__slaid-text {
 	display: block;
@@ -136,6 +172,10 @@
 	background-color: #060606;
 	box-sizing: border-box;
 	bottom: 8px;
+	display: none;
+}
+.control-underline__item.active {
+	display: block;
 }
 .control-underline_left {
 	border-radius: 0 0 0 27px;
@@ -150,6 +190,12 @@
 	flex-wrap: nowrap;
 	justify-content: flex-end;
 }
+.control-numbers__list-item {
+	display: none;
+}
+.control-numbers__list-item.active {
+	display: block;
+}
 .control-numbers__item {
 	font-family: IBMPlexSans;
 	font-size: 11px;
@@ -159,6 +205,7 @@
 	line-height: normal;
 	letter-spacing: 2.2px;
 	color: #060606;
+	display: inline-block;
 }
 .control-numbers__item:nth-child(2) {
 	padding-left: 5px;
