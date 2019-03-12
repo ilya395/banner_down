@@ -1,0 +1,136 @@
+@font-face {
+	font-family: IBMPlexSans;
+	src: url(../fonts/IBMPlexSans/IBMPlexSans-Regular.ttf);
+} 
+@font-face {
+	font-family: Geometria;
+	src: url(../fonts/Geometria/Geometria.otf);
+} 
+/* popup */
+.popup-container {
+	width: 100%;
+	position: absolute;
+	bottom: 80%;
+	box-sizing: border-box;
+}
+.popup-container__wrap {
+	position: absolute;
+	left: 100px/* calc(50% - 224px) */;
+	box-sizing: border-box;	
+}
+.popup-container__form {
+	width: 489px;
+  	border-radius: 9px;
+	box-shadow: 8px 11px 5px 0 rgba(0, 0, 0, 0.1);
+	border: solid 1px #d6d5dc;
+	background-color: #ffffff;
+	padding: 16px 18px 21px 18px;
+	box-sizing: border-box;	
+	position: relative;
+}
+.popup-container__form-close {
+	position: absolute;
+	top: 11px;
+	right: 11px;
+	font-family: Geometria;
+	font-size: 16px;
+	font-weight: bold;
+	font-style: normal;
+	font-stretch: normal;
+	line-height: normal;
+	letter-spacing: normal;
+	text-align: center;
+	color: #ce356b;
+}
+.popup-container__form-title {
+	font-family: IBMPlexSans;
+	font-size: 22px;
+	font-weight: bold;
+	font-style: normal;
+	font-stretch: normal;
+	line-height: normal;
+	letter-spacing: normal;
+	text-align: center;
+	color: #000000;
+}
+.popup-container__form-sub-title {
+	font-family: IBMPlexSans;
+	font-size: 22px;
+	font-weight: normal;
+	font-style: normal;
+	font-stretch: normal;
+	line-height: normal;
+	letter-spacing: normal;
+	text-align: center;
+	color: #ce356b;
+}
+.popup-container__content {
+	padding: 33px 81px 0px 81px;
+	box-sizing: border-box;	
+}
+.popup-container__content-title {
+	font-family: IBMPlexSans;
+	font-size: 16px;
+	font-weight: normal;
+	font-style: normal;
+	font-stretch: normal;
+	line-height: normal;
+	letter-spacing: normal;
+	text-align: center;
+	color: #000000;
+	margin-bottom: 17px;
+}
+.popup-container__content-slaider {
+	margin-top: 17px;
+	margin-bottom: 14px;
+	box-sizing: border-box;	
+}
+.popup-container__content-slaid {
+
+}
+.popup-container__content-slaid .active {
+
+}
+.popup-container__slaid-text {
+	display: block;
+	font-family: IBMPlexSans;
+	font-size: 16px;
+	font-weight: bold;
+	font-style: normal;
+	font-stretch: normal;
+	line-height: 1.5;
+	letter-spacing: normal;
+	color: #000000;
+	margin-bottom: 2px;
+}
+.popup-container__slaid-field {
+	padding-bottom: 8px;
+}
+.popup-container__slaid-name, .popup-container__slaid-phone {
+	border-radius: 5px;
+	border: solid 1px #060606;
+	padding: 14px 15px 14px 15px;
+	width: 100%;
+	box-sizing: border-box;	
+	font-size: 18px;
+}
+.review-slider__control-numbers {
+	display: flex;
+}
+
+.agreement-check-box {
+	width: 11px;
+	height: 11px;
+	border-radius: 1px;
+	background-color: #060606;
+}
+.popup-container__agreement-text {
+	font-family: IBMPlexSans;
+	font-size: 12px;
+	font-weight: normal;
+	font-style: normal;
+	font-stretch: normal;
+	line-height: normal;
+	letter-spacing: normal;
+	color: #4a4a4a;
+}
