@@ -34,16 +34,16 @@ body {
 .popup-container {
 	width: 100%;
 	position: fixed;
-	bottom: -190px;
+	bottom: -11.875rem;
 	z-index: 2;
 	box-sizing: border-box;
 	transition: bottom 0.5s ease;
 	display: flex;
 	justify-content: center;
-	margin-bottom: -8px;
+	margin-bottom: -0.5rem;
 }
 .popup-container.show {
-	bottom: 30px;
+	bottom: 1.875rem;
 }
 .popup-container__wrap {
 	width: 100%;
@@ -62,35 +62,35 @@ body {
 	align-items: flex-end;
 }
 .popup-container__img {
-	margin-bottom: -129px;
+	margin-bottom: -8.0625rem;
 }
 .popup-container__images-item:nth-child(2) {
-	padding-right: 15px;
+	padding-right: 0.9375rem;
 }
 .popup-container__images-item:nth-child(1) {
-	padding-right: 45px;
+	padding-right: 2.8125rem;
 }
 .popup-container__form-wrap {
 	flex-basis: 66.66667%;
 }
 /* форма */
 .popup-container__form {
-	width: 489px;
-  	border-radius: 9px;
-	box-shadow: 8px 11px 5px 0 rgba(0, 0, 0, 0.1);
-	border: solid 1px #d6d5dc;
+	width: 30.5625rem;
+  	border-radius: 0.5625rem;
+	box-shadow: 0.5rem 0.6875rem 0.3125rem 0 rgba(0, 0, 0, 0.1);
+	border: solid 0.0625rem #d6d5dc;
 	background-color: #ffffff;
-	padding: 16px 18px 0px 18px;
+	padding: 1rem 1.125rem 0rem 1.125rem;
 	box-sizing: border-box;	
 	position: relative;
 	overflow: hidden;
 }
 .popup-container__form-close {
 	position: absolute;
-	top: 11px;
-	right: 11px;
+	top: 0.6875rem;
+	right: 0.6875rem;
 	font-family: Geometria;
-	font-size: 16px;
+	font-size: 1rem;
 	font-weight: bold;
 	font-style: normal;
 	font-stretch: normal;
@@ -101,7 +101,7 @@ body {
 }
 .popup-container__form-title {
 	font-family: IBMPlexSans;
-	font-size: 22px;
+	font-size: 1.375rem;
 	font-weight: bold;
 	font-style: normal;
 	font-stretch: normal;
@@ -112,7 +112,7 @@ body {
 }
 .popup-container__form-sub-title {
 	font-family: IBMPlexSans;
-	font-size: 22px;
+	font-size: 1.375rem;
 	font-weight: normal;
 	font-style: normal;
 	font-stretch: normal;
@@ -120,11 +120,11 @@ body {
 	letter-spacing: normal;
 	text-align: center;
 	color: #ce356b;
-	margin-bottom: 21px;
+	margin-bottom: 1.3125rem;
 }
 /* всплывающий контент */
 .popup-container__content {
-	padding: 0px 81px 0px 81px;
+	padding: 0rem 5.0625rem 0rem 5.0625rem;
 	box-sizing: border-box;	
 	position: relative;
 	height: 0;
@@ -134,12 +134,12 @@ body {
 	bottom: 0;
 }
 .popup-container__content.show {
-	height: 226px;
-	padding-top: 0px;
+	height: 14.125rem;
+	padding-top: 0rem;
 }
 .popup-container__content-title {
 	font-family: IBMPlexSans;
-	font-size: 16px;
+	font-size: 1rem;
 	font-weight: normal;
 	font-style: normal;
 	font-stretch: normal;
@@ -147,12 +147,12 @@ body {
 	letter-spacing: normal;
 	text-align: center;
 	color: #000000;
-	margin-top: 12px;
-	margin-bottom: 17px;
+	margin-top: 0.75rem;
+	margin-bottom: 1.0625rem;
 }
 .popup-container__content-slaider {
-	margin-top: 17px;
-	margin-bottom: 14px;
+	margin-top: 1.0625rem;
+	margin-bottom: 0.875rem;
 	box-sizing: border-box;	
 }
 .popup-container__content-slaid {
@@ -165,30 +165,30 @@ body {
 .popup-container__slaid-text {
 	display: block;
 	font-family: IBMPlexSans;
-	font-size: 16px;
+	font-size: 1rem;
 	font-weight: bold;
 	font-style: normal;
 	font-stretch: normal;
 	line-height: 1.5;
 	letter-spacing: normal;
 	color: #000000;
-	margin-bottom: 2px;
+	margin-bottom: 0.125rem;
 }
 .popup-container__slaid-field {
-	padding-bottom: 8px;
+	padding-bottom: 0.5rem;
 }
 .popup-container__slaid-name, .popup-container__slaid-phone {
-	border-radius: 5px;
-	border: solid 1px #060606;
-	padding: 14px 15px 14px 15px;
+	border-radius: 0.3125rem;
+	border: solid 0.0625rem #060606;
+	padding: 0.875rem 0.9375rem 0.875rem 0.9375rem;
 	width: 100%;
 	box-sizing: border-box;	
-	font-size: 18px;
+	font-size: 1.125rem;
 }
 .popup-container__slaid-arrow {
 	position: absolute;
 	z-index: 1;
-	top: calc(100% - 42px);
+	top: calc(100% - 2.625rem);
 	right: 5%;
 }
 .review-slider__control-underline {
@@ -201,24 +201,24 @@ body {
 	position: absolute;
 	flex-basis: 50%;
 	width: 50%;
-	border: 1px solid #060606;
-	border-radius: 0 0 0 27px;
-	height: 5px;
+	border: 0.0625rem solid #060606;
+	border-radius: 0 0 0 1.6875rem;
+	height: 0.3125rem;
 	background-color: #060606;
 	box-sizing: border-box;
-	bottom: 8px;
+	bottom: 0.3125rem;
 	display: none;
 }
 .control-underline__item.active {
 	display: block;
 }
 .control-underline_left {
-	border-radius: 0 0 0 27px;
+	border-radius: 0 0 0 1.6875rem;
 	left: 0;
 }
 .control-underline_right {
 	width: 100%;
-	border-radius: 0 0 27px 27px;
+	border-radius: 0 0 1.6875rem 1.6875rem;
 	right: 0;
 }
 .review-slider__control-numbers {
@@ -234,18 +234,18 @@ body {
 }
 .control-numbers__item {
 	font-family: IBMPlexSans;
-	font-size: 11px;
+	font-size: 0.6875rem;
 	font-weight: bold;
 	font-style: normal;
 	font-stretch: normal;
 	line-height: normal;
-	letter-spacing: 2.2px;
+	letter-spacing: 0.6875rem;
 	color: #060606;
 	display: inline-block;
 }
 .control-numbers__item:nth-child(2) {
-	padding-left: 5px;
-	padding-right: 5px;
+	padding-left: 0.3125rem;
+	padding-right: 0.3125rem;
 }
 .popup-container__content-agreement {
 	display: flex;
@@ -261,23 +261,23 @@ input[type=checkbox].agreement-check-box {
 	content: "";
 	display: inline-block;
 	position: absolute;
-	width: 11px;
-	height: 11px;
-	border-radius: 1px;
+	width: 0.6875rem;
+	height: 0.6875rem;
+	border-radius: 0.0625rem;
 	background-color: #060606;
-	top: 4px;
+	top: 0.25rem;
 	left: 0;	
 }
 input[type=checkbox].agreement-check-box:checked + .popup-container__agreement-text:before {
     content: "\2714";
     color: #ffffff;
-    font-size: 9px;
+    font-size: 0.5625rem;
 	text-align: center;
-    line-height: 9px;	    
+    line-height: 0.5625rem;	    
 }
 .popup-container__agreement-text {
 	font-family: IBMPlexSans;
-	font-size: 12px;
+	font-size: 0.75rem;
 	font-weight: normal;
 	font-style: normal;
 	font-stretch: normal;
@@ -286,7 +286,7 @@ input[type=checkbox].agreement-check-box:checked + .popup-container__agreement-t
 	color: #4a4a4a;
 	cursor: pointer;
 	display: inline-block;
-	margin-left: 20px;	
+	margin-left: 1.25rem;	
 }
 /* media */
 @media(max-width: 576px) {
@@ -301,7 +301,7 @@ input[type=checkbox].agreement-check-box:checked + .popup-container__agreement-t
 	}
 	
 	.popup-container__wrap {
-		left: 0px;
+		left: 0rem;
 		width: 100%;
 	}	
 	.popup-container__form {
