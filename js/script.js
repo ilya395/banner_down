@@ -3,8 +3,31 @@ function() {
 	var popupContainer = document.getElementById('popupContainer');
 }
 */
+
+
+window.onscroll = function() {
+	/*
+	var scrolled = window.pageYOffset || document.documentElement.scrollTop;
+	console.log(scrolled);
+	if (scrolled > 2) {
+		var popupWrap = document.getElementById('popupContainer');
+		popupWrap.classList.toggle('show');		
+	}
+	*/
+	var specBlock = document.getElementById('specBlock');
+	var coords = specBlock.getBoundingClientRect();
+	console.log(coords.top);
+	var windowHeight = document.documentElement.clientHeight;
+	console.log(windowHeight);
+	if (coords.top < 0) {
+		var popupWrap = document.getElementById('popupContainer');
+		popupWrap.classList.toggle('show');
+	}
+}
+/*  */
 function closeFunction() {
 	var closePopup = document.getElementById('popupContainer');
+	console.log(closePopup.length);
 	popupContainer.style.display = 'none';
 }
 /*  */

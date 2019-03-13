@@ -22,15 +22,29 @@ body {
 	font-family: Geometria;
 	src: url(../fonts/Geometria/Geometria.otf);
 } 
+.popup__wrap {
+	position: fixed;
+	height: 100%;
+	top: calc(100% - 30px);
+	display: block;
+}
 /* popup */
 .popup-container {
 	width: 100%;
-	position: absolute;
+	/* position: absolute; */
 	bottom: 30px;
-	/* position: fixed; */
-	z-index: 999;
+	bottom: -130px;
+	position: absolute;
+	z-index: 2;
 	box-sizing: border-box;
+	transition: height 0.1s ease;
 	display: block;
+	/* height: 0; */
+}
+.popup-container.show {
+	/* height: 100px; */
+	position: fixed;
+	bottom: 0;
 }
 .popup-container__wrap {
 	left: calc(50% - 224px);
