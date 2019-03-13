@@ -212,10 +212,11 @@ body {
 	display: block;
 }
 .control-underline_left {
-	border-radius: 0 0 0 27px;
+	border-radius: 0 0 27px 27px;
 	left: 0;
 }
 .control-underline_right {
+	width: 100%;
 	border-radius: 0 0 27px 0;
 	right: 0;
 }
