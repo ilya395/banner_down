@@ -2,87 +2,102 @@
 <html lang="ru">
 <head>
 	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
 	<title>popup</title>
 	<link rel="stylesheet" href="css/style.css">
 	<script type="text/javascript" src="js/script.js"></script>
 </head>
 <body>
-	<div class="test-block"></div>
+	<div class="test-block" id="specBlock"></div>
 	<div class="test-block block_2"></div>
 	<div class="test-block block_3"></div>
 	<div class="test-block"></div>
 	<div class="test-block block_2"></div>
 	<div class="test-block block_3"></div>
-
-	<div class="popup-container" id="popupContainer">
-		<div class="popup-container__wrap">
-			<div class="popup-container__form">
-				<div class="popup-container__form-close" onclick="closeFunction()">
-					<span>X</span>
+	
+	<div class="popup__wrap" id="popupWrap">
+		<div class="popup-container" id="popupContainer">
+			<div class="popup-container__wrap">
+				<div class="popup-container__images">
+					<div class="popup-container__images-item">
+						<img src="images/r-1.png" alt="" class="popup-container__img">
+					</div>
+					<div class="popup-container__images-item">
+						<img src="images/r-2.png" alt="" class="popup-container__img">
+					</div>
 				</div>
-				<div class="popup-container__form-title">
-					Предстарт продаж второй очереди
-				</div>
-				<div class="popup-container__form-sub-title" onclick="deployContent()">
-					Квартиры по выгодной цене
-				</div>
-				<div class="popup-container__content" id="popupContent">
-					<div class="popup-container__content-wrap">
-						<div class="popup-container__content-title">
-							Успейте забронировать до официального старта продаж
+				<div class="popup-container__form-wrap">
+					<div class="popup-container__form">
+						<div class="popup-container__form-close" onclick="closeFunction()">
+							<span>X</span>
 						</div>
-						<div class="popup-container__content-slaider">
-							<div class="popup-container__content-slaider-wrap">
-								<div class="popup-container__content-slaid active">
-									<label for="userName" class="popup-container__slaid-text">Имя</label>
-									<div class="popup-container__slaid-field">
-										<input type="text" id="userName" name="name" class="popup-container__slaid-name">
+						<div class="popup-container__form-title"  onclick="deployContent()">
+							Предстарт продаж второй очереди
+						</div>
+						<div class="popup-container__form-sub-title" onclick="deployContent()">
+							Квартиры по выгодной цене
+						</div>
+						<div class="popup-container__content" id="popupContent">
+							<div class="popup-container__content-wrap">
+								<div class="popup-container__content-title">
+									Успейте забронировать до официального старта продаж
+								</div>
+								<div class="popup-container__content-slaider">
+									<div class="popup-container__content-slaider-wrap">
+										<div class="popup-container__content-slaid active">
+											<label for="userName" class="popup-container__slaid-text">Имя</label>
+											<div class="popup-container__slaid-field">
+												<input type="text" id="userName" name="name" class="popup-container__slaid-name">
+											</div>
+											<div class="popup-container__slaid-arrow" onclick="nextSlide()">
+												<img src="images/arrright_black.png" alt="" class="popup-container__slaid-arrow-img">
+											</div>
+										</div>
+										<div class="popup-container__content-slaid">
+											<label for="userTelephone" class="popup-container__slaid-text">Телефон</label>
+											<div class="popup-container__slaid-field">
+												<input type="tel" id="userTelephone" name="telephone" class="popup-container__slaid-phone">
+											</div>
+											<div class="popup-container__slaid-arrow" onclick="nextSlide()">
+												<img src="images/arrright_black.png" alt="" class="popup-container__slaid-arrow-img">
+											</div>							
+										</div>								
 									</div>
-									<div class="popup-container__slaid-arrow" onclick="nextSlide()">
-										<img src="images/arrright_black.png" alt="" class="popup-container__slaid-arrow-img">
+									<div class="popup-container__slaid-control">
+										<div class="review-slider__control-underline">
+											<div class="control-underline__item control-underline_left active" onclick="previousSlide()">
+											</div>
+											<div class="control-underline__item control-underline_right" onclick="nextSlide()">
+											</div>
+										</div>
+										<div class="review-slider__control-numbers">
+											<div class="control-numbers__list-item active">
+												<div class="control-numbers__item">01</div>
+												<div class="control-numbers__item">/</div>
+												<div class="control-numbers__item">02</div>		
+											</div>
+											<div class="control-numbers__list-item">
+												<div class="control-numbers__item">02</div>
+												<div class="control-numbers__item">/</div>
+												<div class="control-numbers__item">02</div>		
+											</div>
+										</div>	
 									</div>
 								</div>
-								<div class="popup-container__content-slaid">
-									<label for="userTelephone" class="popup-container__slaid-text">Телефон</label>
-									<div class="popup-container__slaid-field">
-										<input type="tel" id="userTelephone" name="telephone" class="popup-container__slaid-phone">
-									</div>
-									<div class="popup-container__slaid-arrow" onclick="nextSlide()">
-										<img src="images/arrright_black.png" alt="" class="popup-container__slaid-arrow-img">
-									</div>							
-								</div>								
-							</div>
-							<div class="popup-container__slaid-control">
-								<div class="review-slider__control-underline">
-									<div class="control-underline__item control-underline_left active" onclick="previousSlide()">
-									</div>
-									<div class="control-underline__item control-underline_right" onclick="nextSlide()">
+								<div class="popup-container__content-agreement">
+									<div class="popup-container__agreement-check-box">
+										<input type="checkbox" id="agreementCheckBox" checked="checked" class="agreement-check-box">
+										<label for="agreementCheckBox" class="popup-container__agreement-text">согласие на обработку персональных данных</label>
 									</div>
 								</div>
-								<div class="review-slider__control-numbers">
-									<div class="control-numbers__list-item active">
-										<div class="control-numbers__item">01</div>
-										<div class="control-numbers__item">/</div>
-										<div class="control-numbers__item">02</div>		
-									</div>
-									<div class="control-numbers__list-item">
-										<div class="control-numbers__item">02</div>
-										<div class="control-numbers__item">/</div>
-										<div class="control-numbers__item">02</div>		
-									</div>
-								</div>	
-							</div>
-						</div>
-						<div class="popup-container__content-agreement">
-							<div class="popup-container__agreement-check-box">
-								<input type="checkbox" id="agreementCheckBox" checked="checked" class="agreement-check-box">
-								<label for="agreementCheckBox" class="popup-container__agreement-text">согласие на обработку персональных данных</label>
 							</div>
 						</div>
 					</div>
 				</div>
+				<div class="popup-container__empty-block"></div>
 			</div>
 		</div>
 	</div>
+
 </body>
 </html>

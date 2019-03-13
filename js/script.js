@@ -3,9 +3,38 @@ function() {
 	var popupContainer = document.getElementById('popupContainer');
 }
 */
+
+	/*
+	var scrolled = window.pageYOffset || document.documentElement.scrollTop;
+	console.log(scrolled);
+	if (scrolled > 2) {
+		var popupWrap = document.getElementById('popupContainer');
+		popupWrap.classList.toggle('show');		
+	}
+	*/
+
+
+window.onscroll = function() {	
+	var specBlock = document.getElementById('specBlock');
+	var coords = specBlock.getBoundingClientRect();
+	console.log(coords.top);
+	var windowHeight = document.documentElement.clientHeight;
+	console.log(windowHeight);
+	if (coords.top < 0) {
+		var popupWrap = document.getElementById('popupContainer');
+		popupWrap.classList.add('show');
+	}
+	if (popupWrap.classList.contains('show')) {
+		
+	}
+}
+/*  */
+
+/*  */
 function closeFunction() {
 	var closePopup = document.getElementById('popupContainer');
-	popupContainer.style.display = 'none';
+	console.log(closePopup.length);
+	closePopup.style.display = 'none';
 }
 /*  */
 function deployContent() {

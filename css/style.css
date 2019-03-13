@@ -1,6 +1,8 @@
 /* test styles */
 body {
 	position: relative;
+	/*.  */
+	margin: 0;
 }
 .test-block {
 	height: 250px;
@@ -22,21 +24,55 @@ body {
 	font-family: Geometria;
 	src: url(../fonts/Geometria/Geometria.otf);
 } 
+.popup__wrap {
+	position: fixed;
+	bottom: 0;
+	display: block;
+}
 /* popup */
 .popup-container {
 	width: 100%;
-	position: absolute;
-	bottom: 30px;
-	/* position: fixed; */
-	z-index: 999;
+	position: fixed;
+	bottom: -190px;
+	z-index: 2;
 	box-sizing: border-box;
-	display: block;
+	transition: bottom 0.5s ease;
+	display: flex;
+	justify-content: center;
+	margin-bottom: -8px;
+}
+.popup-container.show {
+	/* height: 100px; */
+	bottom: 30px;
 }
 .popup-container__wrap {
-	left: calc(50% - 224px);
+	/* left: calc(50% - 224px); */
+	width: 100%;
 	box-sizing: border-box;	
 	cursor: default;
 	position: relative;	
+	display: flex;
+	flex-wrap: nowrap;
+	/* align-items: flex-end; */
+}
+.popup-container__images {
+	flex-basis: 33.33333%;
+	display: flex;
+	flex-direction: row-reverse;
+	flex-wrap: nowrap;
+	align-items: flex-end;
+}
+.popup-container__img {
+	margin-bottom: -129px;
+}
+.popup-container__images-item:nth-child(2) {
+	padding-right: 15px;
+}
+.popup-container__images-item:nth-child(1) {
+	padding-right: 45px;
+}
+.popup-container__form-wrap {
+	flex-basis: 66.66667%;
 }
 .popup-container__form {
 	width: 489px;
@@ -92,7 +128,7 @@ body {
 	box-sizing: border-box;	
 	position: relative;
 	height: 0;
-	transition: height 2s ease, padding-top 2s ease;
+	transition: height 1s ease, padding-top 2s ease;
 }
 .popup-container__content-wrap {
 	/* position: absolute; */
@@ -251,4 +287,53 @@ input[type=checkbox].agreement-check-box:checked + .popup-container__agreement-t
 	cursor: pointer;
 	display: inline-block;
 	margin-left: 20px;	
+}
+/* media */
+@media(max-width: 576px) {
+	.popup-container__images {
+		display: none;
+	}
+	.popup-container__form-wrap {
+		flex-basis: 100%;
+	}
+	.block_2 {
+		background: white;
+	}
+	
+	.popup-container__wrap {
+		left: 0px;
+		width: 100%;
+	}	
+	.popup-container__form {
+		margin: 0 auto;
+	}
+}
+@media(min-width: 576px) {
+	.popup-container__images {
+		display: none;
+	}
+	.popup-container__form-wrap {
+		flex-basis: 100%;
+	}	
+	.popup-container__form {
+		margin: 0 auto;
+	}
+
+}
+@media(min-width: 768px) {
+	.popup-container__images {
+		display: flex;
+	}
+	.popup-container__form-wrap {
+		flex-basis: 66.66667%;
+	}	
+	.popup-container__form {
+		margin-left: 0;
+	}
+}
+@media(min-width: 992px) {
+
+}
+@media(min-width: 1200px) {
+
 }
