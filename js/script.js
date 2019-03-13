@@ -1,56 +1,26 @@
-/*  
-function() {
-	var popupContainer = document.getElementById('popupContainer');
-}
-*/
-
-	/*
-	var scrolled = window.pageYOffset || document.documentElement.scrollTop;
-	console.log(scrolled);
-	if (scrolled > 2) {
-		var popupWrap = document.getElementById('popupContainer');
-		popupWrap.classList.toggle('show');		
-	}
-	*/
-
-
+/* достаем popup из-за нижней границы */
 window.onscroll = function() {	
 	var specBlock = document.getElementById('specBlock');
 	var coords = specBlock.getBoundingClientRect();
-	console.log(coords.top);
 	var windowHeight = document.documentElement.clientHeight;
-	console.log(windowHeight);
 	if (coords.top < 0) {
 		var popupWrap = document.getElementById('popupContainer');
 		popupWrap.classList.add('show');
 	}
-	if (popupWrap.classList.contains('show')) {
-		
-	}
 }
-/*  */
-
-/*  */
+/* закрываем popup */
 function closeFunction() {
 	var closePopup = document.getElementById('popupContainer');
 	console.log(closePopup.length);
 	closePopup.style.display = 'none';
 }
-/*  */
+/* достаем всплывающий контент */
 function deployContent() {
 	var popupContent = document.getElementById('popupContent');
 	console.log("popupContent.length");
 	popupContent.classList.toggle('show');
-/*
-	if ((popupContent.style.display === 'none') || (popupContent.style.display === "")) {
-		popupContent.style.display = 'block';
-		popupContent.classList.toggle('show');
-	} else {
-		popupContent.style.display = 'none';
-	}
-*/
 }
-/*  */
+/* 2 типа состояний во всплывающем контенте */
 var slideIndex = 1;
 showSlides(slideIndex);
 

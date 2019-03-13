@@ -1,7 +1,7 @@
 /* test styles */
 body {
 	position: relative;
-	/*.  */
+/* может быть и не обнулен на сайте */
 	margin: 0;
 }
 .test-block {
@@ -15,7 +15,7 @@ body {
 .block_3 {
 	background-color: yellow;
 }
-/*  */
+/* шрифты */
 @font-face {
 	font-family: IBMPlexSans;
 	src: url(../fonts/IBMPlexSans/IBMPlexSans-Regular.ttf);
@@ -42,19 +42,17 @@ body {
 	margin-bottom: -8px;
 }
 .popup-container.show {
-	/* height: 100px; */
 	bottom: 30px;
 }
 .popup-container__wrap {
-	/* left: calc(50% - 224px); */
 	width: 100%;
 	box-sizing: border-box;	
 	cursor: default;
 	position: relative;	
 	display: flex;
 	flex-wrap: nowrap;
-	/* align-items: flex-end; */
 }
+/* картинки */
 .popup-container__images {
 	flex-basis: 33.33333%;
 	display: flex;
@@ -74,6 +72,7 @@ body {
 .popup-container__form-wrap {
 	flex-basis: 66.66667%;
 }
+/* форма */
 .popup-container__form {
 	width: 489px;
   	border-radius: 9px;
@@ -122,8 +121,8 @@ body {
 	color: #ce356b;
 	margin-bottom: 21px;
 }
+/* всплывающий контент */
 .popup-container__content {
-/*	display: none; */
 	padding: 0px 81px 0px 81px;
 	box-sizing: border-box;	
 	position: relative;
@@ -131,7 +130,6 @@ body {
 	transition: height 1s ease, padding-top 2s ease;
 }
 .popup-container__content-wrap {
-	/* position: absolute; */
 	bottom: 0;
 }
 .popup-container__content.show {
