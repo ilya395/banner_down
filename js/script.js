@@ -4,8 +4,6 @@ function() {
 }
 */
 
-
-window.onscroll = function() {
 	/*
 	var scrolled = window.pageYOffset || document.documentElement.scrollTop;
 	console.log(scrolled);
@@ -14,6 +12,9 @@ window.onscroll = function() {
 		popupWrap.classList.toggle('show');		
 	}
 	*/
+
+
+window.onscroll = function() {	
 	var specBlock = document.getElementById('specBlock');
 	var coords = specBlock.getBoundingClientRect();
 	console.log(coords.top);
@@ -21,14 +22,19 @@ window.onscroll = function() {
 	console.log(windowHeight);
 	if (coords.top < 0) {
 		var popupWrap = document.getElementById('popupContainer');
-		popupWrap.classList.toggle('show');
+		popupWrap.classList.add('show');
+	}
+	if (popupWrap.classList.contains('show')) {
+		
 	}
 }
+/*  */
+
 /*  */
 function closeFunction() {
 	var closePopup = document.getElementById('popupContainer');
 	console.log(closePopup.length);
-	popupContainer.style.display = 'none';
+	closePopup.style.display = 'none';
 }
 /*  */
 function deployContent() {
