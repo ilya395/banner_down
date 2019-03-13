@@ -1,6 +1,7 @@
 /* test styles */
 body {
 	position: relative;
+	font-size: 16px;
 /* может быть и не обнулен на сайте */
 	margin: 0;
 }
@@ -212,12 +213,12 @@ body {
 	display: block;
 }
 .control-underline_left {
-	border-radius: 0 0 27px 27px;
+	border-radius: 0 0 0 27px;
 	left: 0;
 }
 .control-underline_right {
 	width: 100%;
-	border-radius: 0 0 27px 0;
+	border-radius: 0 0 27px 27px;
 	right: 0;
 }
 .review-slider__control-numbers {
